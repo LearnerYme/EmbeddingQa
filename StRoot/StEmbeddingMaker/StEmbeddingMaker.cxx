@@ -50,17 +50,17 @@ Int_t StEmbeddingMaker::Init() {
 	);
 	h2Ev_VxVy = new TH2F(
 		"h2Ev_VxVy", ";v_{x} cm;v_{y} cm;Counts",
-		500, -2.4, 2.5,
-		500, -2.4, 2.5
+		500, -2.5, 2.5,
+		500, -2.5, 2.5
 	);
 	h2Ev_VxVz = new TH2F(
 		"h2Ev_VxVz", ";v_{x} cm;v_{z} cm;Counts",
-		500, -2.4, 2.5,
+		500, -2.5, 2.5,
 		600, -150, 150
 	);
 	h2Ev_VyVz = new TH2F(
 		"h2Ev_VyVz", ";v_{y} cm;v_{z} cm;Counts",
-		500, -2.4, 2.5,
+		500, -2.5, 2.5,
 		600, -150, 150
 	);
 
@@ -95,15 +95,15 @@ Int_t StEmbeddingMaker::Init() {
 	);
 	h1AM_px= new TH1F(
 		"h1AM_px", "All MC tracks;p_{x} GeV/c;Counts",
-		50, 0, 5
+		100, -5, 5
 	);
 	h1AM_py = new TH1F(
 		"h1AM_py", "All MC tracks;p_{y} GeV/c;Counts",
-		50, 0, 5
+		100, -5, 5
 	);
 	h1AM_pz = new TH1F(
 		"h1AM_pz", "All MC tracks;p_{z} GeV/c;Counts",
-		50, 0, 5
+		100, -5, 5
 	);
 	h1AM_pt = new TH1F(
 		"h1AM_pt", "All MC tracks;p_{t} GeV/c;Counts",
